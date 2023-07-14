@@ -1,0 +1,168 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: hsl(235, 18%, 26%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+    /* CSS rules specific to desktop devices */
+    /* Add your styles here */
+
+    .container {
+        color: hsl(234, 29%, 20%);
+        background-color: white;
+        
+        margin: 0;
+        padding: 1rem;
+
+        display: flex;
+        align-items: center;
+
+        border-radius: 35px;
+    }
+
+    .sub-container {
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+    .text-container {
+        width: 375px;
+        padding: 0 64px;
+        font-weight: 400;
+        align-items: left;
+    }
+
+    .main-text {
+        font-size: 3rem;
+        font-family: 'Roboto-bold', sans-serif;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1rem;
+        
+    }
+
+    p {
+        font-size: .85rem;
+        width: 355px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li{
+        display: flex;
+        align-items: center;
+
+    }
+
+    li p {
+        margin-left: 12px;
+        margin-top: 8px;
+        margin-bottom: 8px;   
+    }
+    .label-container {
+        margin-top: 45px;
+        margin-bottom: 12px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .invalid-input {
+        color: tomato;    
+    }
+    label {
+        font-size: .6rem;
+        font-weight: 900;
+        
+    }
+
+    input {
+        height:55px;
+
+        font-size: .8rem;
+        border-radius: 8px;
+        border-style: none;
+
+        border: 1px solid hsl(231, 7%, 60%);
+        padding-left: 23px;
+        
+        margin-bottom: 24px;
+
+        cursor: pointer;
+    }
+
+    button {
+        height: 55px;
+
+        background: hsl(234, 29%, 20%);
+        color: white;
+
+        font-size: .8rem;
+        font-weight: bold;
+
+        border-style: none;
+        border-radius: 8px;
+
+        cursor: pointer;
+    
+    }
+
+    button:hover {
+        background: linear-gradient(to right, #ED607B, #EF7348);
+    }
+
+    .success-container {
+        background-color: white;
+        color: hsl(234, 29%, 20%);
+        border-radius: 35px;
+
+        width: 505px;
+        height: 520px;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        
+    }
+
+    .success-container div {
+        margin: 64px;
+    }
+
+    .thanks-h1 {
+        font-size: 3rem;
+        font-family: 'Roboto-bold', sans-serif;
+        margin: 45px 0 0;
+        padding: 0;
+    }
+
+    .thank-email {
+        font-weight: bold;
+    }
+
+    .success-container p {
+        margin-bottom: 45px;
+    }
+
+    .success-container button {
+        width: 100%;
+    }
+
+    .hidden {
+        display: none;
+    }
+}
+
+  
