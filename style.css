@@ -11,7 +11,9 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
-@media only screen and (min-width: 768px) {
+
+
+@media (min-width: 768px) {
     /* CSS rules specific to desktop devices */
     /* Add your styles here */
 
@@ -64,7 +66,6 @@ html, body {
     li{
         display: flex;
         align-items: center;
-
     }
 
     li p {
@@ -72,57 +73,7 @@ html, body {
         margin-top: 8px;
         margin-bottom: 8px;   
     }
-    .label-container {
-        margin-top: 45px;
-        margin-bottom: 12px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .invalid-input {
-        color: tomato;    
-    }
-    label {
-        font-size: .6rem;
-        font-weight: 900;
-        
-    }
-
-    input {
-        height:55px;
-
-        font-size: .8rem;
-        border-radius: 8px;
-        border-style: none;
-
-        border: 1px solid hsl(231, 7%, 60%);
-        padding-left: 23px;
-        
-        margin-bottom: 24px;
-
-        cursor: pointer;
-    }
-
-    button {
-        height: 55px;
-
-        background: hsl(234, 29%, 20%);
-        color: white;
-
-        font-size: .8rem;
-        font-weight: bold;
-
-        border-style: none;
-        border-radius: 8px;
-
-        cursor: pointer;
     
-    }
-
-    button:hover {
-        background: linear-gradient(to right, #ED607B, #EF7348);
-    }
-
     .success-container {
         background-color: white;
         color: hsl(234, 29%, 20%);
@@ -160,9 +111,148 @@ html, body {
         width: 100%;
     }
 
-    .hidden {
-        display: none;
-    }
+
 }
 
+@media (max-width: 767px) {
+
+    html, body {
+        background: white;
+    }
+
+    .container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: top;
+        background: white;
+
+        font-size: 18px;
+
+    }
+    .sub-container {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    .text-container {
+        margin: 0 1.33rem;
+    }
+
+    .big-svg {
+        width: 100%;
+    }
+
+    .main-text {
+        font-size: 2rem;
+        font-family: 'Roboto-bold', sans-serif;
+        margin: 0;
+        padding: 0;
+        margin-top: 2.4rem;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li{
+        display: flex;
+        align-items: center;
+    }
+
+    li p {
+        margin-left: 12px;
+        margin-top: 8px;
+        margin-bottom: 8px;   
+    }
+
+    .success-container {
+        position: fixed;
+        top: 8rem;
+        margin: 0 1.33rem;
+
+    }
+
+    .thanks-h1 {
+        font-size: 3rem;
+        font-family: 'Roboto-bold', sans-serif;
+        margin: 45px 0 0;
+        padding: 0;
+    }
+
+    .thank-email {
+        font-weight: bold;
+    }
+
+    .success-container p {
+        margin-bottom: 14.5rem;
+    }
+
+    .success-container button {
+        width: 100%;
+    }
+    
+}
+
+.label-container {
+    margin-top: 45px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.invalid-input {
+    color: tomato;    
+}
+label {
+    font-size: .6rem;
+    font-weight: 900;
+    
+}
+
+input {
+    height:55px;
+
+    font-size: .8rem;
+    border-radius: 8px;
+    border-style: none;
+
+    border: 1px solid hsl(231, 7%, 60%);
+    padding-left: 23px;
+    
+    margin-bottom: 24px;
+
+    cursor: pointer;
+}
+
+button {
+    height: 55px;
+
+    background: hsl(234, 29%, 20%);
+    color: white;
+
+    font-size: .8rem;
+    font-weight: bold;
+
+    border-style: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+}
+
+button:hover {
+    background: linear-gradient(to right, #ED607B, #EF7348);
+}
+
+.hidden {
+    display: none;
+}
   
